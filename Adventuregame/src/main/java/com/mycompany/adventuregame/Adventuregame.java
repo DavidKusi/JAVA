@@ -643,6 +643,88 @@ public class Adventuregame {
         }
         });
         
+         leave1.addActionListener(new ActionListener(){
+        
+        public void actionPerformed(ActionEvent e){
+            
+        Desc.setText("You leave");
+        Desc.setBounds(100,100,800,200);
+        Desc.setVisible(true);
+        Desc.setLayout(null);
+        Desc.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Desc.setForeground(Color.WHITE);
+        
+        Gaurd.setText("You enter a Forest");
+        Gaurd.setBounds(100,200,800,200);
+        Gaurd.setVisible(true);
+        Gaurd.setLayout(null);
+        Gaurd.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Gaurd.setForeground(Color.WHITE);
+        
+        Strike.setText("There is some rustling in the bushes");
+        Strike.setBounds(100,300,800,200);
+        Strike.setVisible(true);
+        Strike.setLayout(null);
+        Strike.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Strike.setForeground(Color.WHITE);
+        
+        Hit.setText("A Hobgoblin comes out");
+        Hit.setBounds(100,400,800,200);
+        Hit.setVisible(true);
+        Hit.setLayout(null);
+        Hit.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Hit.setForeground(Color.WHITE);
+        
+        What.setText("What do you do?");
+        What.setBounds(100,500,800,200);
+        What.setVisible(true);
+        What.setLayout(null);
+        What.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        What.setForeground(Color.WHITE);
+        
+        attackhob.setText("Attack the Hobgoblin");
+        attackhob.setBounds(450,550,450,50);
+        attackhob.setVisible(true);
+        attackhob.setLayout(null);
+        attackhob.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+        attackhob.setForeground(Color.WHITE);
+        attackhob.setBackground(Color.BLACK);
+        
+        leave2.setText("Leave");
+        leave2.setBounds(450,600,450,50);
+        leave2.setVisible(true);
+        leave2.setLayout(null);
+        leave2.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+        leave2.setForeground(Color.WHITE);
+        leave2.setBackground(Color.BLACK);
+        
+        Berries.setText("Eat berries from bush");
+        Berries.setBounds(450,650,450,50);
+        Berries.setVisible(true);
+        Berries.setLayout(null);
+        Berries.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+        Berries.setForeground(Color.WHITE);
+        Berries.setBackground(Color.BLACK);
+        
+        
+        
+        if(leave1 == e.getSource()){
+            
+            Talk2.setVisible(false);
+            Talk3.setVisible(false);
+            Talk4.setVisible(false);
+            Talk5.setVisible(false);
+            Dagger.setVisible(false);
+            leave1.setVisible(false);
+            Kill.setVisible(false);
+            
+            
+        
+        }
+        
+        
+        }
+        });
         Berries.addActionListener(new ActionListener(){
         
         public void actionPerformed(ActionEvent e){
@@ -682,6 +764,7 @@ public class Adventuregame {
             What.setVisible(false);
             Attack.setVisible(false);
             Leave.setVisible(false);
+            attackhob.setVisible(false);
             
             
         
@@ -724,6 +807,7 @@ public class Adventuregame {
             Hit.setVisible(false);
             What.setVisible(false);
             Dagger.setVisible(false);
+            attackhob.setVisible(false);
             leave2.setVisible(false);
             
         
