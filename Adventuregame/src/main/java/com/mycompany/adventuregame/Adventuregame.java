@@ -40,6 +40,10 @@ public class Adventuregame {
         
         JLabel label = new JLabel();
         
+        JLabel dead15 = new JLabel();
+        
+        JLabel dead30 = new JLabel();
+        
         JLabel Health = new JLabel();
         
         JLabel Weaponname = new JLabel();
@@ -85,6 +89,10 @@ public class Adventuregame {
         JLabel Stab1 = new JLabel();
         
         JLabel Win = new JLabel();
+        
+        JLabel Health15 = new JLabel();
+        
+        JLabel Health30 = new JLabel();
         
         JButton button = new JButton();
         
@@ -164,6 +172,10 @@ public class Adventuregame {
         panel.add(Continue1);
         panel.add(Continue2);
         panel.add(Win);
+        panel.add(dead15);
+        panel.add(dead30);
+        panel.add(Health15);
+        panel.add(Health30);
         
         button.setBackground(Color.BLACK);
         button.setBounds(600,450,100,50);
@@ -342,6 +354,19 @@ public class Adventuregame {
          
         public void actionPerformed(ActionEvent e){
             
+        dead30.setText("HP:");
+        dead30.setBounds(100,10,100,100);
+        dead30.setVisible(true);
+        dead30.setLayout(null);
+        dead30.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        dead30.setForeground(Color.WHITE);
+        
+        Health30.setText("0"+" "+"(-30)");
+        Health30.setBounds(230,10,120,100);
+        Health30.setVisible(true);
+        Health30.setLayout(null);
+        Health30.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Health30.setForeground(Color.WHITE);
         
         Stab.setText("Player performs Stab");
         Stab.setBounds(100,100,800,200);
@@ -389,6 +414,8 @@ public class Adventuregame {
             Dagger.setVisible(false);
             leave1.setVisible(false);
             Kill.setVisible(false);
+            label.setVisible(false);
+            Health.setVisible(false);
             
             
         
@@ -405,6 +432,20 @@ public class Adventuregame {
          
         public void actionPerformed(ActionEvent e){
             
+            
+        dead30.setText("HP:");
+        dead30.setBounds(100,10,100,100);
+        dead30.setVisible(true);
+        dead30.setLayout(null);
+        dead30.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        dead30.setForeground(Color.WHITE);
+        
+        Health30.setText("0"+" "+"(-30)");
+        Health30.setBounds(230,10,120,100);
+        Health30.setVisible(true);
+        Health30.setLayout(null);
+        Health30.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Health30.setForeground(Color.WHITE);
         
         Stab.setText("Player performs Stab");
         Stab.setBounds(100,100,800,200);
@@ -452,6 +493,8 @@ public class Adventuregame {
             What.setVisible(false);
             Attack.setVisible(false);
             Leave.setVisible(false);
+            label.setVisible(false);
+            Health.setVisible(false);
             
             
             
@@ -503,6 +546,10 @@ public class Adventuregame {
             Desc.setVisible(false);
             Gaurd.setVisible(false);
             leave2.setVisible(false);
+            Health30.setVisible(false);
+            dead30.setVisible(false);
+            Health15.setVisible(false);
+            dead15.setVisible(false);
             
             
             
@@ -552,6 +599,9 @@ public class Adventuregame {
             Desc.setVisible(false);
             Gaurd.setVisible(false);
             What.setVisible(false);
+            Health15.setVisible(false);
+            Health30.setVisible(false);
+            
             
             
         
@@ -728,7 +778,22 @@ public class Adventuregame {
         Berries.addActionListener(new ActionListener(){
         
         public void actionPerformed(ActionEvent e){
+            
+        dead15.setText("HP:");
+        dead15.setBounds(100,10,100,100);
+        dead15.setVisible(true);
+        dead15.setLayout(null);
+        dead15.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        dead15.setForeground(Color.WHITE);
         
+        Health15.setText("0"+" "+"(-15)");
+        Health15.setBounds(230,10,120,100);
+        Health15.setVisible(true);
+        Health15.setLayout(null);
+        Health15.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Health15.setForeground(Color.WHITE);
+        
+ 
         Desc.setText("Player is Poisened");
         Desc.setBounds(100,100,800,200);
         Desc.setVisible(true);
@@ -765,6 +830,7 @@ public class Adventuregame {
             Attack.setVisible(false);
             Leave.setVisible(false);
             attackhob.setVisible(false);
+            Health.setVisible(false);
             
             
         
@@ -776,6 +842,20 @@ public class Adventuregame {
         leave2.addActionListener(new ActionListener(){
         
         public void actionPerformed(ActionEvent e){
+            
+        dead15.setText("HP:");
+        dead15.setBounds(100,10,100,100);
+        dead15.setVisible(true);
+        dead15.setLayout(null);
+        dead15.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        dead15.setForeground(Color.WHITE);
+        
+        Health15.setText("0"+" "+"(-15)");
+        Health15.setBounds(230,10,120,100);
+        Health15.setVisible(true);
+        Health15.setLayout(null);
+        Health15.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Health15.setForeground(Color.WHITE);
         
         Desc.setText("Hobgoblin backstabs you");
         Desc.setBounds(100,100,800,200);
@@ -809,6 +889,8 @@ public class Adventuregame {
             Dagger.setVisible(false);
             attackhob.setVisible(false);
             leave2.setVisible(false);
+            Health.setVisible(false);
+            label.setVisible(false);
             
         
         }
@@ -818,6 +900,22 @@ public class Adventuregame {
        attackhob.addActionListener(new ActionListener(){
         
         public void actionPerformed(ActionEvent e){
+            
+        label.setText("HP:");
+        label.setBounds(100,10,100,100);
+        label.setVisible(true);
+        label.setLayout(null);
+        label.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        label.setForeground(Color.WHITE);
+        
+        Health.setText("15");
+        Health.setBounds(230,10,100,100);
+        Health.setVisible(true);
+        Health.setLayout(null);
+        Health.setFont(new Font("Times New Roman", Font.PLAIN, 40));
+        Health.setForeground(Color.WHITE);
+            
+        
         
         Stab1.setText("Player performs Stab");
         Stab1.setBounds(100,100,800,200);
@@ -879,6 +977,7 @@ public class Adventuregame {
             attackhob.setVisible(false);
             Gaurd.setVisible(false);
             Desc.setVisible(false);
+            
             
             
         
