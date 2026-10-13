@@ -28,8 +28,13 @@ public class EmailAdministrationApplication {
     
     String Development;
     
+   static  String man;
+    
+    static String String;
+    
     private String mailbox;
     
+    int index;
     
     public void setmailbox(String mail){
         
@@ -51,7 +56,7 @@ public class EmailAdministrationApplication {
     
 
 
-   static void MyPassword(){
+   public EmailAdministrationApplication(){
     
     Random ran =  new Random();
     
@@ -59,13 +64,17 @@ public class EmailAdministrationApplication {
     
     for(int i = 0; i < limit; i++){
         
-        int index = ran.nextInt(alphabet.length());
+         index = ran.nextInt(alphabet.length());
         
-        String.append(alphabet.charAt(index));
+         String.append(alphabet.charAt(index));
+         
+          man = String.toString();
+         
+         
     }
    
     
-    System.out.print("Password:"+String);
+    
 }
     public static void main(String[] args) {
         
@@ -86,7 +95,7 @@ public class EmailAdministrationApplication {
              
              System.out.println("Email:"+fname+"."+sname+"@"+"********"+".company.com");
              
-             MyPassword();
+             System.out.println("Password:"+Email.man);
 
              Email.setmailbox("Mail:200mb");
          
@@ -99,7 +108,7 @@ public class EmailAdministrationApplication {
              
              System.out.println("Email:"+fname+"."+sname+"@"+department+".company.com");
              
-             MyPassword();
+             System.out.println("Password:"+Email.man);
              
              Email.setmailbox("Mail:200mb");
          
