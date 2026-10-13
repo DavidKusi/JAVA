@@ -4,13 +4,39 @@
 
 package com.mycompany.emailadministrationapplication;
 
+import java.util.Scanner;
+
 /**
  *
  * @author start
  */
-public class EmailAdministrationApplication {
 
+
+
+
+public class EmailAdministrationApplication {
+    
+static void  MyEmail(){
+
+    
+    
+    
+    
+    
+
+}
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+         Scanner input = new Scanner(System.in);
+         
+         System.out.println("Eneter your email:");
+         String email = input.nextLine();
+         
+         
+        
+        
+        
+        
+        
     }
 }
