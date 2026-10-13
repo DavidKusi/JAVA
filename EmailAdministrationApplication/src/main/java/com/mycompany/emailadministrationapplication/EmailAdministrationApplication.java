@@ -22,23 +22,34 @@ public class EmailAdministrationApplication {
     
     static String alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&*&^%$#@";
     
-    static String Sales;
+    String Sales;
     
-    static String Accounting;
+    String Accounting;
     
-    static String Development;
+    String Development;
+    
+    private String mailbox;
+    
+    
+    public void setmailbox(String mail){
+        
+        
+        this.mailbox = mail;
+        
+        
+        
+    }
+    
+    public String getmailbox(){
+        
+        
+        return mailbox;
+        
+    }
     
     
     
-static void  MyEmail(){
 
-    
-    
-    
-    
-    
-
-}
 
    static void MyPassword(){
     
@@ -76,6 +87,11 @@ static void  MyEmail(){
              System.out.println("Email:"+fname+"."+sname+"@"+"********"+".company.com");
              
              MyPassword();
+
+             Email.setmailbox("Mail:200mb");
+         
+             System.out.print(Email.getmailbox());
+         
              
              
              
@@ -85,10 +101,25 @@ static void  MyEmail(){
              
              MyPassword();
              
+             Email.setmailbox("Mail:200mb");
+         
+             System.out.print(Email.getmailbox());
+         
+             
              
          }
          
-      /*   if(department == Sales){
+         
+         /*
+         System.out.println("*******************");
+         System.out.println("1.Change password");
+         System.out.println("*******************");
+         
+         System.out.print("Enter number:");
+         String num = input.nextLine();
+         
+         
+        if(department == Sales){
              
              
              String ndepartment = fname + sname + department;
